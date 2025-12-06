@@ -1,6 +1,6 @@
 # Experience
-**From June 2024 | Valeuriad | Nantes**
-**Devops and Cloud Architect**
+**From June 2024 | Valeuriad | Nantes**  
+**Devops and Cloud Architect**  
 **France Travail | From Sept 2025**  
 - **Digdash** : Technical Support  
 - **Critical internal application** : Technical support  
