@@ -1,0 +1,114 @@
+site_name: Blog d'un geek infiltré
+site_author: mikamakusa
+repo_url: https://github.com/mikamakusa/blog
+repo_name: blog
+site_url: https://mikamakusa.github.io/blog/
+remote_branch: main
+plugins:
+  - tags
+  - search
+  - document-dates
+  - blog:
+      enabled: true
+      blog_dir: blog
+      blog_toc: true
+      post_date_format: medium
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - tables
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - abbr
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.path
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - content.tooltips
+    - navigation.top
+
+nav:
+  - Home: index.md
+  - Cloud:
+    - Le tracing dans Grafana: cloud/art32.md
+    - La théorie du chaos: cloud/art33.md
+    - Les SLOs démystifiés: cloud/art33-5.md
+    - Comparatif des solutions d'observabilité: cloud/art34.md
+  - Conférences:
+      - Paris Containers Day 2021: confs/art20.md
+      - Toulouse Hacking Convention 2023: confs/art22.md
+      - Le Hack 2023: confs/art24.md
+      - IDM Europe 2023: confs/art25.md
+      - Le Hack 2024: confs/art31.md
+  - Tests:
+      - Ansible, Salt ou Puppet: tests/art2.md
+      - Skaffold: tests/art3.md
+      - Gravitee: tests/art4.md
+      - Thanos: tests/art5.md
+      - Inspec: tests/art6.md
+      - AWS EC2 Image Builder: tests/art9.md
+      - Un nouveau neurone - JAN: tests/art32.md
+      - OnLogs: tests/art27.md
+      - Trellis: tests/art30.md
+      - Rkt: tests/lab10.md
+      - Nomad: tests/lab25.md
+      - Strapi: tests/labo31.md
+      - Apache NIFI: tests/labo45.md
+  - Dev:
+      - Powershell vs Python | Parser du JSON: dev/vars6.md
+      - Les opérateurs ternaires: dev/art12.md
+      - Python et Google Cloud Functions: dev/labo41.md
+  - Labs:
+      - Monitoring et Service Discovery: labs/labo33.md
+      - Smart Monitoring: labs/labo34.md
+      - Thanos et Prometheus: labs/labo35.md
+      - Ejabberd et l'autoscaling: labs/labo36.md
+      - Windows Server | RDS et autoscalling: labs/labo37.md
+      - Vault et Kubernetes - 1ere partie: labs/labo38.md
+      - Vault et Kubernetes - 2eme partie : labs/labo39.md
+      - Vault et Kubernetes - 3eme partie: labs/labo40.md
+      - Liquibase et ArgoCD: labs/labo42.md
+      - Un peu d'intimité pour Terraform: labs/labo44.md
+  - About Me: about.md
