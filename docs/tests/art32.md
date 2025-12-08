@@ -1,14 +1,12 @@
 ---
 title: Développer une UI avec NiceGUI et Python
-created: 2016-04-14
+created: 2024-07-23
 author:
   - mikamakusa
 category:
-  - Dev
+  - Tests
 tags:
-  - Python
-  - Powershell
-  - Json
+  - IA
 ---
 
 La révolution de l'IA générative en 2016 avec **Tay** (de **Microsoft**) puis l'avènement de **ChatGPT** en 2018 a bouleversé les usages...si bien que Apple a finalement décidé de l'intégrer a ses futurs appareils (sans oublier les potentielles failles de sécurité inhérentes a ce type d'usage). Bientôt nous verrons débarquer sur le marché de nombreux ordinateurs, smartphones ou tablettes intégrant cette nouvelle technologie *révolutionaire*.  
