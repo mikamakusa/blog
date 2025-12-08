@@ -100,6 +100,7 @@ nav:
       - Powershell vs Python | Parser du JSON: dev/vars6.md
       - Les opérateurs ternaires: dev/art12.md
       - Python et Google Cloud Functions: dev/labo41.md
+      - CLI et UI en Python: dev/dev01.md
   - Labs:
       - Monitoring et Service Discovery: labs/labo33.md
       - Smart Monitoring: labs/labo34.md
