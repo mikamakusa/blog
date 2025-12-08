@@ -10,9 +10,10 @@ plugins:
   - document-dates
   - blog:
       enabled: true
-      blog_dir: blog
-      blog_toc: true
       post_date_format: medium
+      pagination_per_page: 5
+      archive_pagination_per_page: 10
+      categories_pagination_per_page: 10
 
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
