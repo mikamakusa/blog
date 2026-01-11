@@ -206,7 +206,7 @@ In charge of infrastructure creation "from scratch" on Microsoft Azure Cloud pla
 ---
 
 # Certifications  
-**2025** - **Dataiku** Core Designer, Advanced Designer, Developper, ML Practitioner, Generative AI Practitioner, MLOps Practitioner
+**2025** - **Dataiku** Core Designer, Advanced Designer, Developper, ML Practitioner, Generative AI Practitioner, MLOps Practitioner  
 **2025** - **DBT** Fundamentals  
 **2024** - **Gremlin** Certified Enterprise Chaos Engineering Certification  
 **2020** - Certified **Kubernetes** Administrator  
