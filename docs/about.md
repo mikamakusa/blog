@@ -188,6 +188,7 @@ In charge of infrastructure creation "from scratch" on Microsoft Azure Cloud pla
 - PyArubaCloud (Collaboration for ArubaCloud Library for Python)  
 - Container orchestration with Saltstack
 - Keycloak API Requester
+- Django + NiceGUI
 
 ## Ruby
 - Fog/Arubacloud (ArubaCloud Driver for Fog gem)
@@ -204,7 +205,10 @@ In charge of infrastructure creation "from scratch" on Microsoft Azure Cloud pla
 
 ---
 
-# Certifications
+# Certifications  
+**2025** - **Dataiku** Core Designer, Advanced Designer, Developper, ML Practitioner, Generative AI Practitioner, MLOps Practitioner
+**2025** - **DBT** Fundamentals  
+**2024** - **Gremlin** Certified Enterprise Chaos Engineering Certification  
 **2020** - Certified **Kubernetes** Administrator  
 **2020** - **Google Cloud Platform** Associate Cloud Engineer  
 **2020** - **Hashicorp** Terraform Associate  
