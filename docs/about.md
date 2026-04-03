@@ -6,7 +6,7 @@
 **Devops and Cloud Architect**  
 **France Travail | From Sept 2025**  
 - **Digdash** : Technical Support  
-- **Critical internal application** : Technical support
+- **Critical internal application** : Technical support  
 - **Security** : Application hardening (Apache/Tomcat) and Operating System patch tracking  
 - Python script development (Observability solution)
 
