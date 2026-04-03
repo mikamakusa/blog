@@ -1,16 +1,22 @@
 # Experience
+
+---
+
 **From June 2024 | Valeuriad | Nantes**  
 **Devops and Cloud Architect**  
 **France Travail | From Sept 2025**  
 - **Digdash** : Technical Support  
-- **Critical internal application** : Technical support  
-- Python script development
+- **Critical internal application** : Technical support
+- **Security** : Application hardening (Apache/Tomcat) and Operating System patch tracking  
+- Python script development (Observability solution)
 
 **SNCF Connect and Tech Services | Sept 2024 - Feb 2025**  
 - **Gremlin** & **Gatling** : Technical Support on **Chaos Engineering** & **Load Testing**  
 - **Technical documentation**  
 - **SLA/SLO** : PoC (With **Datadog**)
 - Python script development
+
+---
 
 **Nov 2020 - May 2024 | SQUAD | Nantes**  
 **DevOps Cloud Architect and Consultant Manager**  
