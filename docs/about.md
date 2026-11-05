@@ -5,9 +5,10 @@
 **From June 2024 | Valeuriad | Nantes**  
 **Devops and Cloud Architect**  
 **France Travail | From Sept 2025**  
-- **Digdash** : Technical Support  
-- **Critical internal application** : Technical support  
-- **Security** : Application hardening (Apache/Tomcat) and Operating System patch tracking  
+- **Digdash**/**Dataiku** : Technical Support for users (bundles delivery to production, technical support, continuous improvement)  
+- **Critical internal application** : Technical support, failures investigations  
+- **Security** : CVE tracking, application and Operating System hardening (Apache/Tomcat, RedHat Linux)  
+- **Leosac** : Badges encoding application Deployment/Configuration/Technical Support  
 - Python script development (Observability solution)
 
 **SNCF Connect and Tech Services | Sept 2024 - Feb 2025**  
