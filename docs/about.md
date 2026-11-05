@@ -7,9 +7,11 @@
 **France Travail | From Sept 2025**  
 - **Digdash**/**Dataiku** : Technical Support for users (bundles delivery to production, technical support, continuous improvement)  
 - **Critical internal application** : Technical support, failures investigations  
-- **Security** : CVE tracking, application and Operating System hardening (Apache/Tomcat, RedHat Linux)  
-- **Leosac** : Badges encoding application Deployment/Configuration/Technical Support  
+- **Security** : CVE tracking, application and Operating System hardening (Apache/Tomcat, Oracle Weblogic, RedHat Linux) with Hackuity/Qualys/OpenCVE & GitGuardian  
+- **Leosac** : Badges encoding application Deployment/Configuration/Technical Support
+- **Gitlab-CI** : Pipeline migration from Concourse/Jenkins to Gitlab-CI
 - Python script development (Observability solution)
+- Technical Documentation
 
 **SNCF Connect and Tech Services | Sept 2024 - Feb 2025**  
 - **Gremlin** & **Gatling** : Technical Support on **Chaos Engineering** & **Load Testing**  
