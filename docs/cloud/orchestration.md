@@ -39,8 +39,8 @@ Kamal est un outil open source de déploiement d’applications web conteneuris�
 
 Une fois les présentations effectuées, l'idée de base de cet article est de passer en revue plusieurs angles, tout en considérant aussi bien les environnements *on-premises* que *Cloud* et *Hybride*. Les angles en questions sont les suivants :  
 - [Architecture et Infrastructure](orchestration.md#architecture-et-fonctionnement-interne),  
-- [Exploitation et Orchestration](orchestration.md#exploitation-et-orchestration), 
-- [DevOps et Intégration CI/CD](orchestration.md#devops-et-intégration-cicd), 
+- [Exploitation et Orchestration](orchestration.md#exploitation-et-orchestration),  
+- [DevOps et Intégration CI/CD](orchestration.md#devops-et-intégration-cicd),  
 - [Sécurité et Gouvernance](orchestration.md#sécurité-et-gouvernance)
 
 ---
@@ -64,7 +64,6 @@ Chacune des quatre solution ne s'adresse pas forcément au même public de par l
 **Kubernetes** repose sur une architectuInfrastructurere complètement modulaire, distribuée avec un **Control Plane** composé de :  
 - Api-Server : Le point d'entrée de l'API,  
 - ETCD : Le stockage distribué de l'état du cluster,  
-- [Infrastructure](), 
 - Scheduler : Le composant chargé de sélectionneSécurité et Gouvernancer les noeuds sur lesquels la charge de travail sera déployée,  
 - Controller-Manager : Le composant chargé de la surveillance de l'état de Cluster  
 
@@ -106,10 +105,10 @@ Concernant le **Scheduling**, **Kubernetes** est réellement le plus complet, bi
 **Kamal** ne propose rien de tout cela, sauf si c'est déjà prévu dans la configuration des serveurs (pas de schéduling automatique).
 
 ### Haute disponibilité et auto-healing
-En distinguant les niveaux suivants :
-1. Redémarrage d'un conteneur.
-2. Remplacement d'un conteneur défaillant sur un autre nœud.
-3. Continuité du service malgré la perte d'un nœud ou d'un composant d'infrastructure.
+En distinguant les niveaux suivants :  
+1. Redémarrage d'un conteneur.  
+2. Remplacement d'un conteneur défaillant sur un autre nœud.  
+3. Continuité du service malgré la perte d'un nœud ou d'un composant d'infrastructure.  
 
 **Kubernetes**, **Nomad** et **Swarm** sont vraiment équivalent en terme de fonctionnalités, bien que le permier cité offre un système de réconciliation bien plus complet que les autres.  
 Une limite importante de **Kamal** : si un serveur hébergeant une application tombe, il ne va pas spontanément décider de déplacer cette application vers un autre serveur.
@@ -150,23 +149,23 @@ Avec **Swarm**, les volumes Docker sont utilisables, mais la persistance et la m
 ### Gestion des configurations et des secrets
 Sur **Kubernetes**, les ConfigMaps et Secrets permettent de séparer les paramètres de configuration des images applicatives.
 
-L'approche de **Nomad** est plus modulaire :
-- Variables Nomad.
-- Templates.
-- ACL.
-- Intégration Vault pour injecter des secrets.
+L'approche de **Nomad** est plus modulaire :  
+- Variables Nomad.  
+- Templates.  
+- ACL.  
+- Intégration Vault pour injecter des secrets.  
 L'association Nomad + Consul + Vault constitue une architecture particulièrement intéressante.
 
-**Swarm** propose nativement :
-- Docker Secrets.
-- Docker Configs.
-- Authentification mutuelle TLS entre les nœuds.
+**Swarm** propose nativement :  
+- Docker Secrets.  
+- Docker Configs.  
+- Authentification mutuelle TLS entre les nœuds.  
 Les secrets sont conçus pour être distribués aux services de manière sécurisée.
 
-**Kamal** propose une gestion plus simple, mais moins complète :
-- Secrets transmis lors du déploiement.
-- Variables d'environnement.
-- Fichiers de configuration.
+**Kamal** propose une gestion plus simple, mais moins complète :  
+- Secrets transmis lors du déploiement.  
+- Variables d'environnement.  
+- Fichiers de configuration.  
 - Protection des accès SSH.
 
 ---
