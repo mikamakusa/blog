@@ -13,7 +13,7 @@ tags:
 ---
 # L'orchestration sous toutes ses formes
 
-2014...Voci l'année ou j'ai mis les mains, pour la première fois, sur **Docker** et **Kubernetes** et chacun d'eux à évolué depuis ce temps. On peut dire que je fais partie des **Early Adopters**, j'ai connu les différentes versions, les tentatives de certains concurrents à proposer des alternatives crédibles.  
+2014...Voici l'année ou j'ai mis les mains, pour la première fois, sur **Docker** et **Kubernetes** et chacun d'eux à évolué depuis ce temps. On peut dire que je fais partie des **Early Adopters**, j'ai connu les différentes versions, les tentatives de certains concurrents à proposer des alternatives crédibles.  
 Cependant l'objectif de cet article n'est pas de revenir sur la genèse de **Rancher**, de **Kontena** ni même sur l'idée de base d'**Openshift** ou même sur le déclin d'**Apache Mesos**.  
 
 Ici je vais effectuer un tour d'horizon de **Kubernetes**, **Hashicorp Nomad**, **Docker Swarm** et **Kamal**.
@@ -123,7 +123,7 @@ Là ou **Kubernetes** s'appuie sur un modèle réseau stable reposant sur :
 - Une adresse IP par Pod,  
 - Des Services pour fournir des points d'accès stables,  
 - Des composants CNI pour le réseau des Pods,  
-- Des mécanismes de Gateway et d'Ingress pouComme r les accès externes.
+- Des mécanismes de Gateway et d'Ingress pour les accès externes.
 
 **Nomad** s'appuie sur **Consul** pour : 
 - La découverte de services,  
