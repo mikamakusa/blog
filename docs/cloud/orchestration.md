@@ -41,23 +41,21 @@ Une fois les présentations effectuées, l'idée de base de cet article est de p
 - [Architecture et Infrastructure](orchestration.md#architecture-et-fonctionnement-interne),  
 - [Exploitation et Orchestration](orchestration.md#exploitation-et-orchestration), 
 - [DevOps et Intégration CI/CD](orchestration.md#devops-et-intégration-cicd), 
-- [Sécurité et Gouvernance](orchestration.md#sécurité-et-gouvernance), 
-- Disponibilité, 
-- Scalabilité
+- [Sécurité et Gouvernance](orchestration.md#sécurité-et-gouvernance)
 
 ---
 
 ## Le positionnement
 Chacune des quatre solution ne s'adresse pas forcément au même public de par leur mode de fonctionnement dont voici les détails :  
-| Critère | **Kubernetes** | **Nomad** | **Swarm** | **Kamal** |
-| ------- | -------------- | --------- | --------- | --------- |
-| Orchestrateur Natif | Oui | Oui | Oui | Non |
-| Multi-noeuds | Oui | Oui | Oui | Oui |
-| Scheduling Distribué | Oui | Oui | Oui | Non |
-| Auto-Healing | Oui | Oui | Oui | Limité |
-| Auto-scaling natif |	Oui, via composants | Oui, via intégrations | Non | Non |
-| Gestion multi-types de workloads | Oui | Oui | Principalement conteneurs | Conteneurs |
-| Complexité | Élevée | Moyenne | Faible | Faible |
+| Critère | **Kubernetes** | **Nomad** | **Swarm** | **Kamal** |  
+| ------- | -------------- | --------- | --------- | --------- |  
+| Orchestrateur Natif | Oui | Oui | Oui | Non |  
+| Multi-noeuds | Oui | Oui | Oui | Oui |  
+| Scheduling Distribué | Oui | Oui | Oui | Non |  
+| Auto-Healing | Oui | Oui | Oui | Limité |  
+| Auto-scaling natif |	Oui, via composants | Oui, via intégrations | Non | Non |  
+| Gestion multi-types de workloads | Oui | Oui | Principalement conteneurs | Conteneurs |  
+| Complexité | Élevée | Moyenne | Faible | Faible |  
 
 ---
 
@@ -67,7 +65,7 @@ Chacune des quatre solution ne s'adresse pas forcément au même public de par l
 - Api-Server : Le point d'entrée de l'API,  
 - ETCD : Le stockage distribué de l'état du cluster,  
 - [Infrastructure](), 
-- Scheduler : Le composant chargé de sélectionner les noeuds sur lesquels la charge de travail sera déployée,  
+- Scheduler : Le composant chargé de sélectionneSécurité et Gouvernancer les noeuds sur lesquels la charge de travail sera déployée,  
 - Controller-Manager : Le composant chargé de la surveillance de l'état de Cluster  
 
 Mais également de **Workers** chargés d'exécuter les charges de travail, composés de :  
@@ -126,7 +124,7 @@ Là ou **Kubernetes** s'appuie sur un modèle réseau stable reposant sur :
 - Une adresse IP par Pod,  
 - Des Services pour fournir des points d'accès stables,  
 - Des composants CNI pour le réseau des Pods,  
-- Des mécanismes de Gateway et d'Ingress pour les accès externes.
+- Des mécanismes de Gateway et d'Ingress pouComme r les accès externes.
 
 **Nomad** s'appuie sur **Consul** pour : 
 - La découverte de services,  
@@ -189,3 +187,29 @@ Voici quelques-uns des outils disponible pour déployer sur **Kubernetes** les d
 ---
 
 ## Sécurité et Gouvernance
+**Kubernetes** offre un système de gouvernance ainsi que des possibilité de sécurisation extrêmement complet et puissants :  
+- Les ServiceAccounts,  
+- Les RBAC,  
+- Les namespaces,  
+- Les politiques réseau,  
+- Les images et les registres.  
+
+Mais son extrême modularité vient avec une contrainte non négligeable : sa grande surface d'attaque qu'il ne faut pas négliger de sécuriser.
+
+Présentant une surface bien plus réduite ainsi qu'une intégration presque naturelle avec **Consul** et **Vault**, **Nomad** propose également des possibilités de sécurisation relativement élevées.
+
+**Swarm** propose des mécanismes de gouvernance et de sécurité granulaire bien moins avancés que les deux premiers malgré l'intégration par défaut de certificats TLS.  
+En revanche, **Kamal** est fortement dépendant de la sécurité des serveurs sur lesquels il est déployés, ce qui inclue la configuration de sécurité du service SSH en lui même.
+
+---
+
+## Conclusion
+Ma conclusion ?  
+Le choix de l'orchestrateur dépendra surtout de l'usage final.  
+| Objectif | Solution à privilégier | A noter |  
+| -------- | ---------------------- | ------- |  
+| Plateforme cloud-native complète | Kubernetes | richesse fonctionnelle - écosystème vaste - pérennité |  
+| Alternative crédible à Kubernetes | Nomad | architecture légère - polyvalence - simplicité d'exploitation |  
+| Simplicité Docker multi-nœuds | Swarm | simplicité - limites fonctionnelles |  
+| Déploiement applicatif simple | Kamal | excellent outil - dans une catégorie différente des orchestrateurs |  
+
