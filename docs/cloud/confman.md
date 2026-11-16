@@ -26,14 +26,65 @@ Je pourrais également citer **OpenText Server Automation**, **Foreman**, ou **P
 
 ### Comparatif synthétique
 Voici déjà un comparatif assez synthétique de chaque outils (je rentrerai dans les détails plus tard) :  
-| Outils | Licence / Modèle | Agent | Linux | Windows | Gestion déclarative |  
-| ------ | ---------------- | ----- | ----- | ------- | ------------------- |  
-| Rudder Core | Libre - Gratuit | Oui | Oui | En fonction de l'édition | Oui |  
-| Ansible | Libre - Gratuit | Non | Oui | Oui, mais pas nativement | Oui |  
-| Puppet | Open Source / Commercial | Oui | Oui | Oui | Oui |  
-| CFEngine | Open Source / Commercial | Oui | Oui | Oui | Oui |  
-| Salt | Libre - Grauit | Optionnel | Oui | Oui | Oui | Oui |  
-| Chef Infra | Open source / commercial |	Oui | Oui | Oui | Oui |
+
+<table>
+  <tr>
+    <td><strong>Outils</strong></td>
+    <td><strong>Licence / Modèle</strong></td>
+    <td><strong>Agent</strong></td>
+    <td><strong>Linux</strong></td>
+    <td><strong>Windows</strong></td>
+    <td><strong>Gestion déclarative</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Rudder Core</strong></td>
+    <td>Libre - Gratuit</td>
+    <td>Oui</td>
+    <td>Oui</td>
+    <td>En fonction de l'édition</td>
+    <td>Oui</td>
+  </tr>
+  <tr>
+    <td><strong>Ansible</strong></td>
+    <td>Libre - Gratuit</td>
+    <td>Oui</td>
+    <td>Oui</td>
+    <td>Oui, mais pas nativement</td>
+    <td>Oui</td>
+  </tr>
+  <tr>
+    <td><strong>Puppet</strong></td>
+    <td>Open Source / Commercial</td>
+    <td>Oui</td>
+    <td>Oui</td>
+    <td>Oui</td>
+    <td>Oui</td>
+  </tr>
+  <tr>
+    <td><strong>CFEngine</strong></td>
+    <td>Open Source / Commercial</td>
+    <td>Oui</td>
+    <td>Oui</td>
+    <td>Oui</td>
+    <td>Oui</td>
+  </tr>
+  <tr>
+    <td><strong>Salt</strong></td>
+    <td>Libre - Gratuit</td>
+    <td>Oui</td>
+    <td>Oui</td>
+    <td>Oui</td>
+    <td>Oui</td>
+  </tr>
+  <tr>
+    <td><strong>Chef Infra</strong></td>
+    <td>Open Source / Commercial</td>
+    <td>Oui</td>
+    <td>Oui</td>
+    <td>Oui</td>
+    <td>Oui</td>
+  </tr>
+</table>
 
 ## L'architecture
 Concernant **Salt**, on peut distinguer deux modes de fonctionnement :  
@@ -279,14 +330,51 @@ Mention spéciale pour **Ansible** : Bien que compatible avec **Windows**, ce de
 
 ## Licences et coûts
 C'est un critère essentiel si l'objectif est de construire une solution entièrement libre et gratuite, y compris pour un usage professionnel.
-| Solution | Édition communautaire | Édition commerciale | Principale limitation |
-| -------- | --------------------- | ------------------- | --------------------- |
-| Rudder | Rudder Core | Rudder Enterprise | Fonctions avancées et plateformes selon édition |
-| Ansible | Ansible Community | Red Hat AAP | Gouvernance et fonctionnalités avancées |
-| Puppet | Puppet Core | Puppet Enterprise | Fonctionnalités avancées et support |
-| Chef Infra | Composants open source | Chef 360 | Plateforme commerciale et évolution du serveur historique |
-| Salt | Salt Open | SaltStack Config | Gouvernance et interface avancées |
-| CFEngine | Community | Enterprise | Reporting et fonctionnalités avancées |
+
+<table>
+  <tr>
+    <td><strong>Solution</strong></td>
+    <td><strong>Edition communautaire</strong></td>
+    <td><strong>Edition Commerciale</strong></td>
+    <td><strong>Principale limitation</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Rudder</strong></td>
+    <td>Rudder Core</td>
+    <td>Rudder Enterprise</td>
+    <td>Fonctions avancées et plateformes selon édition</td>
+  </tr>
+  <tr>
+    <td><strong>Ansible</strong></td>
+    <td>Ansible Community</td>
+    <td>Red Hat AAP</td>
+    <td>Gouvernance et fonctionnalités avancées</td>
+  </tr>
+  <tr>
+    <td><strong>Puppet</strong></td>
+    <td>Puppet Core</td>
+    <td>Puppet Enterprise</td>
+    <td>Fonctionnalités avancées et support</td>
+  </tr>
+  <tr>
+    <td><strong>Chef Infra</strong></td>
+    <td>Composants open source</td>
+    <td>Chef 360</td>
+    <td>Plateforme commerciale et évolution du serveur historique</td>
+  </tr>
+  <tr>
+    <td><strong>Salt</strong></td>
+    <td>Salt Open</td>
+    <td>SaltStack Config</td>
+    <td>Gouvernance et interface avancées</td>
+  </tr>
+  <tr>
+    <td><strong>CFEngine</strong></td>
+    <td>Community</td>
+    <td>Enterprise</td>
+    <td>Reporting et fonctionnalités avancées</td>
+  </tr>
+</table>
 
 **ATTENTION** : **Chef Infra** est en fin de vie et sera remplacé par **Chef 360**.
 Il restera néanmoins utilisable et documenté.
