@@ -78,6 +78,7 @@ nav:
     - Les SLOs démystifiés: cloud/art33-5.md
     - Comparatif des solutions d'observabilité: cloud/art34.md
     - L'orchestration sous toutes ses formes: cloud/orchestration.md
+    - Quoi de neuf sur la gestion de configuration: cloud/confman.md
   - Conférences:
       - Paris Containers Day 2021: confs/art20.md
       - Toulouse Hacking Convention 2023: confs/art22.md
