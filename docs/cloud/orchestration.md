@@ -47,15 +47,65 @@ Une fois les présentations effectuées, l'idée de base de cet article est de p
 
 ## Le positionnement
 Chacune des quatre solution ne s'adresse pas forcément au même public de par leur mode de fonctionnement dont voici les détails :  
-| Critère | **Kubernetes** | **Nomad** | **Swarm** | **Kamal** |  
-| ------- | -------------- | --------- | --------- | --------- |  
-| Orchestrateur Natif | Oui | Oui | Oui | Non |  
-| Multi-noeuds | Oui | Oui | Oui | Oui |  
-| Scheduling Distribué | Oui | Oui | Oui | Non |  
-| Auto-Healing | Oui | Oui | Oui | Limité |  
-| Auto-scaling natif |	Oui, via composants | Oui, via intégrations | Non | Non |  
-| Gestion multi-types de workloads | Oui | Oui | Principalement conteneurs | Conteneurs |  
-| Complexité | Élevée | Moyenne | Faible | Faible |  
+
+<table>
+  <tr>
+    <td><strong>Critère</strong><td>
+    <td><strong>Kubernetes</strong><td>
+    <td><strong>Nomad</strong><td>
+    <td><strong>Swarm</strong><td>
+    <td><strong>Kamal</strong><td>
+  </tr>
+  <tr>
+    <td>Orchestrateur Natif</td>
+    <td>OUI</td>
+    <td>OUI</td>
+    <td>OUI</td>
+    <td>NON</td>
+  </tr>
+  <tr>
+    <td>Multi-noeuds</td>
+    <td>OUI</td>
+    <td>OUI</td>
+    <td>OUI</td>
+    <td>NON</td>
+  </tr>
+  <tr>
+    <td>Scheduling Distribué</td>
+    <td>OUI</td>
+    <td>OUI</td>
+    <td>OUI</td>
+    <td>NON</td>
+  </tr>
+  <tr>
+    <td>Auto-Healing</td>
+    <td>OUI</td>
+    <td>OUI</td>
+    <td>OUI</td>
+    <td>Limité</td>
+  </tr>
+  <tr>
+    <td>Auto-scaling natif</td>
+    <td>OUI, via composants</td>
+    <td>OUI, via intégrations</td>
+    <td>NON</td>
+    <td>NON</td>
+  </tr>
+  <tr>
+    <td>Gestion multi-types de workloads</td>
+    <td>OUI</td>
+    <td>OUI</td>
+    <td>Principalement conteneurs</td>
+    <td>Conteneurs</td>
+  </tr>
+  <tr>
+    <td>Complexité</td>
+    <td>Elevée</td>
+    <td>Moyenne</td>
+    <td>Faible</td>
+    <td>Faible</td>
+  </tr>
+</table>
 
 ---
 
@@ -212,3 +262,30 @@ Le choix de l'orchestrateur dépendra surtout de l'usage final.
 | Simplicité Docker multi-nœuds | Swarm | simplicité - limites fonctionnelles |  
 | Déploiement applicatif simple | Kamal | excellent outil - dans une catégorie différente des orchestrateurs |  
 
+<table>
+  <tr>
+    <td><strong>Objectif</strong></td>
+    <td><strong>Solution à privilégier</strong></td>
+    <td><strong>A boter</strong></td>
+  </tr>
+  <tr>
+    <td>Plateforme cloud-native complète</td>
+    <td><strong>Kubernetes</strong></td>
+    <td>richesse fonctionnelle - écosystème vaste - pérennité</td>
+  </tr>
+  <tr>
+    <td>Alternative crédible à Kubernetes</td>
+    <td><strong>Nomad</strong></td>
+    <td>architecture légère - polyvalence - simplicité d'exploitation</td>
+  </tr>
+  <tr>
+    <td>Simplicité Docker multi-nœuds</td>
+    <td><strong>Swarm</strong></td>
+    <td>simplicité - limites fonctionnelles</td>
+  </tr>
+  <tr>
+    <td>Déploiement applicatif simple</td>
+    <td><strong>Kamal</strong></td>
+    <td>excellent outil - dans une catégorie différente des orchestrateurs</td>
+  </tr>
+</table>
