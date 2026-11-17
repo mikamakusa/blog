@@ -50,11 +50,11 @@ Chacune des quatre solution ne s'adresse pas forcément au même public de par l
 
 <table>
   <tr>
-    <td><strong>Critère</strong><td>
-    <td><strong>Kubernetes</strong><td>
-    <td><strong>Nomad</strong><td>
-    <td><strong>Swarm</strong><td>
-    <td><strong>Kamal</strong><td>
+    <td><strong>Critère</strong></td>
+    <td><strong>Kubernetes</strong></td>
+    <td><strong>Nomad</strong></td>
+    <td><strong>Swarm</strong></td>
+    <td><strong>Kamal</strong></td>
   </tr>
   <tr>
     <td>Orchestrateur Natif</td>
@@ -255,12 +255,6 @@ En revanche, **Kamal** est fortement dépendant de la sécurité des serveurs su
 ## Conclusion
 Ma conclusion ?  
 Le choix de l'orchestrateur dépendra surtout de l'usage final.  
-| Objectif | Solution à privilégier | A noter |  
-| -------- | ---------------------- | ------- |  
-| Plateforme cloud-native complète | Kubernetes | richesse fonctionnelle - écosystème vaste - pérennité |  
-| Alternative crédible à Kubernetes | Nomad | architecture légère - polyvalence - simplicité d'exploitation |  
-| Simplicité Docker multi-nœuds | Swarm | simplicité - limites fonctionnelles |  
-| Déploiement applicatif simple | Kamal | excellent outil - dans une catégorie différente des orchestrateurs |  
 
 <table>
   <tr>
