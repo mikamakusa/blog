@@ -108,17 +108,17 @@ nav:
       - Ejabberd et l'autoscaling: labs/labo36.md
       - Windows Server | RDS et autoscalling: labs/labo37.md
       - Les labs Sécurité:
-        - Vault et Kubernetes - 1ere partie: securite/labo38.md
-        - Vault et Kubernetes - 2eme partie : securite/labo39.md
-        - Vault et Kubernetes - 3eme partie: securite/labo40.md
+        - Vault et Kubernetes - 1ere partie: labs/securite/labo38.md
+        - Vault et Kubernetes - 2eme partie : labs/securite/labo39.md
+        - Vault et Kubernetes - 3eme partie: labs/securite/labo40.md
       - Les labs Orchestration:
-        - Liquibase et ArgoCD: orchestration/labo42.md
+        - Liquibase et ArgoCD: labs/orchestration/labo42.md
       - Les labs Observabilité:
-        - Thanos: observabilite/labo35.md
-        - Smart Monitoring: observabilite/labo34.md
-        - Service Discovery: observabilite/labo33.md
+        - Thanos: labs/observabilite/labo35.md
+        - Smart Monitoring: labs/observabilite/labo34.md
+        - Service Discovery: labs/observabilite/labo33.md
       - Les labs Terraform:
-        - Private registry: terraform/labo44.md
+        - Private registry: labs/terraform/labo44.md
       - Les labs Configuration Management: 
-        - Rudder: configman/rudder1.md
+        - Rudder: labs/configman/rudder1.md
   - About Me: about.md
