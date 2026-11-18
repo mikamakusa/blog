@@ -105,14 +105,20 @@ nav:
       - Python et Google Cloud Functions: dev/labo41.md
       - CLI et UI en Python: dev/dev01.md
   - Labs:
-      - Monitoring et Service Discovery: labs/labo33.md
-      - Smart Monitoring: labs/labo34.md
-      - Thanos et Prometheus: labs/labo35.md
       - Ejabberd et l'autoscaling: labs/labo36.md
       - Windows Server | RDS et autoscalling: labs/labo37.md
-      - Vault et Kubernetes - 1ere partie: labs/labo38.md
-      - Vault et Kubernetes - 2eme partie : labs/labo39.md
-      - Vault et Kubernetes - 3eme partie: labs/labo40.md
-      - Liquibase et ArgoCD: labs/labo42.md
-      - Un peu d'intimité pour Terraform: labs/labo44.md
+      - Les labs Sécurité:
+        - Vault et Kubernetes - 1ere partie: securite/labo38.md
+        - Vault et Kubernetes - 2eme partie : securite/labo39.md
+        - Vault et Kubernetes - 3eme partie: securite/labo40.md
+      - Les labs Orchestration:
+        - Liquibase et ArgoCD: orchestration/labo42.md
+      - Les labs Observabilité:
+        - Thanos: observabilite/labo35.md
+        - Smart Monitoring: observabilite/labo34.md
+        - Service Discovery: observabilite/labo33.md
+      - Les labs Terraform:
+        - Private registry: terraform/labo44.md
+      - Les labs Configuration Management: 
+        - Rudder: configman/rudder1.md
   - About Me: about.md
