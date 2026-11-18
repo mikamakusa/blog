@@ -27,7 +27,7 @@ A l'instar de **Kubernetes** et des points qui seront abordés ici, je vais éga
 - La configuration de l'authentification du **Kubernetes**
 
 ## Le point de départ
-Je vous invite à consulter [l'article précédent](http://www.ageekslab.com/lab/labo38/) autour de **Vault** et de la création d'un cluster.  
+Je vous invite à consulter [l'article précédent](https://www.mikamakusa.fr/labs/securite/labo38/) autour de **Vault** et de la création d'un cluster.  
 Pour ainsi dire, je n'ai presque rien modifié pour ce cluster là, si ce n'est l'absence de serveur **LDAP** pour l'authentification, le *master token* suffira amplement.  
 
 ### Consul - La configuration
@@ -112,7 +112,7 @@ Le dashboard (pour une démo prochaine, par exemple) : `minikube dashboard` et `
 ### Le workflow
 
 Le principe est relativement simple et schematisé ci-dessous :  
-![img1](../images/kubevault.png)  
+![img1](../../images/kubevault.png)  
 
 - 1 : Un utilisateur effectue une requête de déploiement,  
 - 2 : L'API de **Kubernetes** détecte une création de pod dans le manifeste et le place dans la queue de déploiement,  

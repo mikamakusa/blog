@@ -36,7 +36,7 @@ Maintenant nous allons nous pencher sur deux éléments nouveaux, à savoir :
 
 Si le premier ne requiert qu'un simple *token* pour fonctionner, la second peut donner des sueurs froides par la création de clés SSL...qui peuvent être créées à l'aide de **Consul** ou de tout autre outils prévu à cet effet (**OpenSSL** par exemple).
 
-![img1](../images/consul_secure.png)
+![img1](../../images/consul_secure.png)
 
 #### Secure Gossip Communication Encryption
 Il s'agit ici de sécuriser les communications entre tous les membres du cluster sans exception.  
@@ -133,7 +133,7 @@ Personnellement, je recommande **file** et **syslog** car ils sont tous les deux
 Comme évoqué au début de l'article **Consul** et **Vault** seront déployés dans **Kubernetes**, le premier en tant que **Service Mesh**, le second en tant que **Secret Manager**. Je vais évidemment faire appel à la toute puissance de **Helm** pour déployer rapidement les deux services et je vais détailler un minimum chaque *value file*.  
 Je précise que la version de **Helm** utilisée ici est la version 3...après avoir tenté avec la version 2...L'avantage est l'absence de **Tiller**.  
 
-![img2](../images/consul_vault_kube.png)
+![img2](../../images/consul_vault_kube.png)
 
 #### Consul Helm Chart
 Tous les charts **Helm** sont entièrement personnalisable, celui-ci ne déroge pas à la règle. Cependant, il ne sera pas extrêmement différent de la version *non kubernetisée* sur laquelle j'ai pu travailler.

@@ -26,7 +26,7 @@ Les outils nécessaires de ce lab sont ceux avec lesquels j'ai pu présenter par
 - Slack  
 - Jenkins
 
-Dans mon [article précédent](http://ageekslab.com/lab/labo33/), j'avais déjà abordé le sujet de la configuration du Service Discovery Consul pour Prometheus.  
+Dans mon [article précédent](https://www.mikamakusa.fr/labs/observabilite/labo33/), j'avais déjà abordé le sujet de la configuration du Service Discovery Consul pour Prometheus.  
 Néanmoins d'autres options de Service Discovery sont possible, telles que **Azure**, **AWS** ou même **GCP** en renseignant plusieurs paramètres, tels que :  
 
 Pour Azure :  

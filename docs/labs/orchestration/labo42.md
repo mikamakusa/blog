@@ -22,7 +22,7 @@ On pourrait croire qu’il n’y a rien de plus simple que de de provisionner un
 Cependant cet article n’aurait pas besoin d’être écrit, ni même publié, s’il n’y avait pas un peu de challenge, car il ne s’agit pas de déployer qu’une seule base de données mais une vingtaine, le tout autour de...plus d’une centaine de schémas de données et jusqu’à six types de données différents.
 Vous l’avez bien compris...nous n’allons pas aborder du MySQL ou du MariaDB mais du Microsoft SQL Server.
 
-![img1](../images/sqld-1.png) 
+![img1](../../images/sqld-1.png) 
 
 # Le besoin
 Il s’avère que l’application cible nécessite un jeu de données pour pouvoir démarrer et fonctionner correctement, ce jeu de données « legacy » tourne actuellement sur d’anciens serveurs SQL Server 2008 (en cours de remplacement) et, dans le but de moderniser le déploiement de l’application, nous avons également besoin de repenser le provisionning de la base SQL.  
@@ -52,7 +52,7 @@ A l’aide de plusieurs technologies :
 Autant commencer par l’ingrédient probablement le moins fun mais qui a toute son importance dans le processus. Imaginez devoir gérer à la main plus de mille fichiers, c’est chronophage et souvent source d’erreurs.  
 Je préfère rappeler un autre détail : je ne suis pas développeur python, j’avoue également avoir démarré cette moulinette en bash.  
 
-![img2](../images/sqld-2.png) 
+![img2](../../images/sqld-2.png) 
 
 La structure du dump SQL Server sur laquelle j’ai pu mettre la main est la suivante : `/racine/database_name/datatype/schema.table_name.sql`
 Evidemment « table_name » peut être remplacé par « function_name », « storedprocedure_name » ou par autre chose. Néanmoins la structure du dump suit un pattern bien précis qui permet l’automatisation de :  
@@ -171,7 +171,7 @@ def gitactions(base_dir, target_dir, env):
 
 ```
 
-![img3](../images/sqld-3.png) 
+![img3](../../images/sqld-3.png) 
 
 # Gitlab-CI
 Une fois tout le code versionné sur Gitlab, il nous fallait pouvoir continuer à travailler, avec en but final, de déployer notre code T-SQL sur le serveur cible.  
@@ -183,18 +183,18 @@ Avec Gitlab-CI (nous aurions pu utiliser Jenkins, Travis-CI ou n’importe quel 
 
 Dans ce but, nous avons utilisé deux dépôts différents, le premier pour versionner certaines fonctions de notre pipeline (à la manière des shared libraries de Jenkins), le second pour “consommer” ces fonctions via l’utilisation d’une balise “include”.dans chaque dépôt relatifs aux schema de base de données.
 
-![img4](../images/sqld-4.png) 
+![img4](../../images/sqld-4.png) 
 
 Le pipeline appelé : 
 
-![img5](../images/sqld-5.png) 
+![img5](../../images/sqld-5.png) 
 
 D’un côté, cela permet de gérer son code depuis un seul dépôt…par contre, la moindre mise-à-jour mal maîtrisée peut avoir des conséquences dramatiques et causer des erreurs en série.  
 
 Mais ce n’est pas tout...nous avions également un autre dépôt dans lequel les Charts ArgoCD, des manifests au format yaml (similaire à ceux de Kubernetes), seraient versionnés et déployés automatiquement.  
 
 
-![img6](../images/sqld-6.png) 
+![img6](../../images/sqld-6.png) 
 
 # Helm
 Je pense ne plus avoir besoin d’expliquer ce qu’est Helm ou à quoi il peut servir. Il s’agit bien évidemment d’un gestionnaire de package dédié au déploiement d’objets sur Kubernetes. Les objets en question peuvent être des daemonset, des replicaset, des operators, des services, etc.  
@@ -206,7 +206,7 @@ Petite précision : un Chart Helm ne contenant pas de pods étant déjà disponi
 C’est également a ce moment qu’entre un autre dépôt Gitlab sur lequel est versionné le code du Chart ainsi que le pipeline permettant de le publier sur Harbor.  
 
 
-![img7](../images/sqld-7.png) 
+![img7](../../images/sqld-7.png) 
 
 
 # ArgoCD
@@ -219,14 +219,14 @@ Avec ArgoCD, j’entre dans le vif du sujet du déploiement des données sur le 
 
 La configuration du dépôt Harbor sur lequel sont enregistrés les charts Helm de chaque schéma de de données est simple, via l’écran Settings / Repositories (le second menu sur la gauche) :
 
-![img8](../images/sqld-8.png) 
+![img8](../../images/sqld-8.png) 
 
 
 Grâce à l’assistant de déploiement d’application, la maintenance des éléments déployés est simple et, souvent, automatique en fonction des options sélectionnés durant la phase de création (via les sync options)  : 
 
-![img9](../images/sqld-9.png) 
+![img9](../../images/sqld-9.png) 
 
-![img10](../images/sqld-10.png) 
+![img10](../../images/sqld-10.png) 
 
 Lors de la phase de création d’application, une option “Edit as YAML” est présente (en haut à droite) et nous permettra d’éditer le chart ArgoCD et de le versionner dans un dépôt  git prévu à cet effet. Dépôt git qui nous servira, par la suite, à redéployer automatiquement l’application en cas de mise-à-jour du dépôt originel.
 

@@ -38,10 +38,10 @@ Kamal est un outil open source de déploiement d’applications web conteneuris�
 ---
 
 Une fois les présentations effectuées, l'idée de base de cet article est de passer en revue plusieurs angles, tout en considérant aussi bien les environnements *on-premises* que *Cloud* et *Hybride*. Les angles en questions sont les suivants :  
-- [Architecture et Infrastructure](orchestration.md#architecture-et-fonctionnement-interne),  
-- [Exploitation et Orchestration](orchestration.md#exploitation-et-orchestration),  
-- [DevOps et Intégration CI/CD](orchestration.md#devops-et-intégration-cicd),  
-- [Sécurité et Gouvernance](orchestration.md#sécurité-et-gouvernance)
+- **Architecture et Infrastructure**,  
+- **Exploitation et Orchestration**,  
+- **DevOps et Intégration CI/CD**,  
+- **Sécurité et Gouvernance**
 
 ---
 
