@@ -80,45 +80,46 @@ nav:
     - L'orchestration sous toutes ses formes: cloud/orchestration.md
     - Quoi de neuf sur la gestion de configuration: cloud/confman.md
   - Conférences:
-      - Paris Containers Day 2021: confs/art20.md
-      - Toulouse Hacking Convention 2023: confs/art22.md
-      - Le Hack 2023: confs/art24.md
-      - IDM Europe 2023: confs/art25.md
-      - Le Hack 2024: confs/art31.md
+    - Paris Containers Day 2021: confs/art20.md
+    - Toulouse Hacking Convention 2023: confs/art22.md
+    - Le Hack 2023: confs/art24.md
+    - IDM Europe 2023: confs/art25.md
+    - Le Hack 2024: confs/art31.md
   - Tests:
-      - Ansible, Salt ou Puppet: tests/art2.md
-      - Skaffold: tests/art3.md
-      - Gravitee: tests/art4.md
-      - Thanos: tests/art5.md
-      - Inspec: tests/art6.md
-      - AWS EC2 Image Builder: tests/art9.md
-      - Un nouveau neurone - JAN: tests/art32.md
-      - OnLogs: tests/art27.md
-      - Trellis: tests/art30.md
-      - Rkt: tests/lab10.md
-      - Nomad: tests/lab25.md
-      - Strapi: tests/labo31.md
-      - Apache NIFI: tests/labo45.md
+    - Ansible, Salt ou Puppet: tests/art2.md
+    - Skaffold: tests/art3.md
+    - Gravitee: tests/art4.md
+    - Thanos: tests/art5.md
+    - Inspec: tests/art6.md
+    - AWS EC2 Image Builder: tests/art9.md
+    - Un nouveau neurone - JAN: tests/art32.md
+    - OnLogs: tests/art27.md
+    - Trellis: tests/art30.md
+    - Rkt: tests/lab10.md
+    - Nomad: tests/lab25.md
+    - Strapi: tests/labo31.md
+    - Apache NIFI: tests/labo45.md
+    - nerdctl: tests/nerdctl.md
   - Dev:
-      - Powershell vs Python | Parser du JSON: dev/vars6.md
-      - Les opérateurs ternaires: dev/art12.md
-      - Python et Google Cloud Functions: dev/labo41.md
-      - CLI et UI en Python: dev/dev01.md
+    - Powershell vs Python | Parser du JSON: dev/vars6.md
+    - Les opérateurs ternaires: dev/art12.md
+    - Python et Google Cloud Functions: dev/labo41.md
+    - CLI et UI en Python: dev/dev01.md
   - Labs:
-      - Ejabberd et l'autoscaling: labs/labo36.md
-      - Windows Server | RDS et autoscalling: labs/labo37.md
-      - Les labs Sécurité:
-        - Vault et Kubernetes - 1ere partie: labs/securite/labo38.md
-        - Vault et Kubernetes - 2eme partie : labs/securite/labo39.md
-        - Vault et Kubernetes - 3eme partie: labs/securite/labo40.md
-      - Les labs Orchestration:
-        - Liquibase et ArgoCD: labs/orchestration/labo42.md
-      - Les labs Observabilité:
-        - Thanos: labs/observabilite/labo35.md
-        - Smart Monitoring: labs/observabilite/labo34.md
-        - Service Discovery: labs/observabilite/labo33.md
-      - Les labs Terraform:
-        - Private registry: labs/terraform/labo44.md
-      - Les labs Configuration Management: 
-        - Rudder: labs/configman/rudder1.md
+    - Ejabberd et l'autoscaling: labs/labo36.md
+    - Windows Server | RDS et autoscalling: labs/labo37.md
+    - Les labs Sécurité:
+      - Vault et Kubernetes - 1ere partie: labs/securite/labo38.md
+      - Vault et Kubernetes - 2eme partie : labs/securite/labo39.md
+      - Vault et Kubernetes - 3eme partie: labs/securite/labo40.md
+    - Les labs Orchestration:
+      - Liquibase et ArgoCD: labs/orchestration/labo42.md
+    - Les labs Observabilité:
+      - Thanos: labs/observabilite/labo35.md
+      - Smart Monitoring: labs/observabilite/labo34.md
+      - Service Discovery: labs/observabilite/labo33.md
+    - Les labs Terraform:
+      - Private registry: labs/terraform/labo44.md
+    - Les labs Configuration Management: 
+      - Rudder: labs/configman/rudder1.md
   - About Me: about.md
