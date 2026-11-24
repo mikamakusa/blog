@@ -50,12 +50,12 @@ Un coup d'oeil aux objets surveillés par **Sloop** :
 
 L'interface web de **Sloop** est certainement la fonctionnalité la plus intéressante, elle permet :  
 
-- D'identifier le moment de création et suppression de$GOPATH/bin/sloop
-
-   pods,  
+- D'identifier le moment de création et suppression de pods,  
 - D'observer l'évolution des déployments,  
 - De suivre les événements liés aux jobs,  
 - De comprendre la succession des opérations lors d'un incident
+
+![img1](../images/CBdwDlPn-ptjICENIDuwlHE4WqwkvwnpyDVhbWYJtxHU5TfI-j-brQcvcO8vhl8xKMYz3Zy8tHNv9UsZxQMkHKlkhexKzKxBLTkyeIYMFw-gRRzqcHBvRXQbf8EJNIxz8QM6ON16s73iTUEnae-mhgOpQ0zfDvMbQlWybx--C8o.jpeg)
 
 ## L'indice est sous le pavé...
 
