@@ -62,7 +62,7 @@ L'interface web de **Sloop** est certainement la fonctionnalité la plus intére
 Il faut le dire : **Sloop** fonctionne comme **kube event**, mais de manière graphique...certains pourront dire que *c'est du bonbon pour les yeux*.
 Parmis les fonctionnalités principales, on retrouve :  
 
-- L'historisation des événements : **kube events** est pratique mais relativement limité en terme de stockage, grâce au moteur de stockage (sur lequel je reviendrais plus tard) les événements sont stockage plus durablement afin d'avoir une vraiment valeur ajoutée en cas de diagnostic sur des pannes,  
+- L'historisation des événements : **kube events** est pratique mais relativement limité en terme de stockage, grâce au moteur de stockage (sur lequel je reviendrais plus tard) les événements sont stockés plus durablement afin d'apporter une vraie valeur ajoutée en cas de diagnostic sur des pannes,  
 - La recherches de ressources supprimées. Contrairement à la commande `kubectl get pods`, **Sloop** n'est pas limité aux ressources encore présente,  
 - L'historique de déploiement, il permet notamment de visualiser les relations temporelles entre *deployment*, *replicaset*, *statefulset* et *pods* (entre autres),  
 - La chronologie des événements, lors d'événements intermittent de type *redémarrage occasionnels de pods*, *un deployment qui ne pervient pas à atteindre un nombre précis de replicas*, *un problème durant un rollout*...**Sloop* est très utile pour cela.
