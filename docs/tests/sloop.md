@@ -1,7 +1,4 @@
 ---
-
-## title: Sloop
-
 date: 2026-11-23
 author:
 
@@ -11,6 +8,7 @@ category:
 tags:
 - sloop
 - kubernetes
+---
 
 # Sloop
 
