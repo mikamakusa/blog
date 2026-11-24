@@ -100,6 +100,7 @@ nav:
     - Strapi: tests/labo31.md
     - Apache NIFI: tests/labo45.md
     - nerdctl: tests/nerdctl.md
+    - Sloop: tests/sloop.md
   - Dev:
     - Powershell vs Python | Parser du JSON: dev/vars6.md
     - Les opérateurs ternaires: dev/art12.md
